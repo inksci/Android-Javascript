@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 测试</title>
+
+<style type="text/css">
+    .input{
+        width:98%;
+        height:38px;
+    }
+    .button{
+        width:60%;
+    height:20px;
+    background:#fffeff;
+    }
+</style>
+<script type="text/javascript">
+
+if(typeof AndroidApp === 'undefined'){
+	document.write("None: AndroidApp")
+}else{
+	document.write("Yes: AndroidApp")
+}
+
+    //js调用as
+    function sayhello(){
+        var name = document.getElementById("textName").value;
+        AndroidApp.sayHello(name);
+    }
+
+    //as调用js
+
+    function showName(name){
+        document.getElementById("textName").value = name;
+    }
+</script>
+</head>
+<body>
+    <input id="textName" class="input">
+    <br/>
+    <hr>
+    <button class="button" onclick="sayhello()">say hello</button>
+    <a href="http://inksci.com/~tstbox/AndroidApp.html">On Line</a>
+    <a href="http://inksci.com/">inksci</a>
+</body>
+</html>
